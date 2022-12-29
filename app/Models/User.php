@@ -51,7 +51,9 @@ class User extends Authenticatable
                 $query->orWhere("email",$search);
             }
 
-        })->get();
+        })
+        ->with('comments')
+        ->get();
 
         return $users;
 

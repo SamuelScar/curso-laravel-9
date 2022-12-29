@@ -9,7 +9,7 @@
     <a href="{{ route("comments.create", $user->id ) }}" class="bg-blue-900 rounded-full text-white px-4 text-sm">+</a>
 </h1>
 
-<form action="{{ route("users.index") }}" method="get" class="py-5">
+<form action="{{ route("comments.index", $user->id) }}" method="get" class="py-5">
     <input 
         type="text" 
         name="search" 
