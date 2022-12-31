@@ -13,6 +13,7 @@
 <form
     action="{{ route("users.update", $user->id) }}"
     method="POST"
+    enctype="multipart/form-data"
 >
     @method("PUT")
     @include('users._partials.form');
